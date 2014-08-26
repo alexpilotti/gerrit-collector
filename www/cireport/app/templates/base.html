@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block page_title %}Gerrit Viz{% endblock %}</title>
+        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="static/style.css"/>
+        <link rel="stylesheet" type="text/css" href="static/buttons.css"/>
+        {% block backbone_templates %}{% endblock %}
+    </head>
+    <body>
+        <div class="container" >
+            <div class="header" style="background-color:#E6E6E6; min-height:110px">
+                {% block header %}
+    <div class="col-sm-12">
+                        <p style="float:left; position:relative">
+                            <img class="logo" src="static/images/ci-stats.png"/>
+                        </p>
+    <h2 id="stats_head"> </h2>
+<!-- " class="button button-border-primary button-rounded" -->
+            <a class="button button-border-primary button-rounded button-one" style='float: left; margin-right:10px' href='#nova' > Nova </a>
+            <a class="button button-border-primary button-rounded button-two" style='float:left;' href='#neutron' > Neutron </a>
+
+                    </div>
+                {% endblock %}
+            </div>
+
+            <div class="content">
+                {% block content %}
+                {{ content |safe }}
+                {% endblock %}
+            </div>
+
+            <div class="footer">
+                {% block footer %}
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>
+                            <img class="logo" src="http://www.cloudbase.it/wp-content/themes/dt-nimble/timthumb.php?src=/wp-content/uploads/2012/10/CBSL-WebLogo2014-H72.png&zc=0&w=230&h=68&r_src=/wp-content/uploads/2012/10/CBSL-WebLogo2014-H220.png"/>
+                        </p>
+                        <p>&copy; Copyright 2014 Cloudbase Solutions</p>
+                    </div>
+                </div>
+                {% endblock %}
+            </div>
+        </div>
+
+        <script type="text/javascript" src="static/lib/jquery/js/jquery-2.0.3.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="static/lib/underscore/underscore-1.5.2-min.js"></script>
+        <script type="text/javascript" src="static/lib/backbone/backbone-1.1.0-min.js"></script>
+        <script type="text/javascript" src="static/lib/bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="static/lib/highstock/highstock.js"></script>
+        <script src="static/lib/highstock/modules/exporting.js"></script>
+        <script type="text/javascript" src="static/app.js"></script>
+        <script type="text/javascript" src="static/models.js"></script>
+        <script type="text/javascript" src="static/views.js"></script>
+        <script type="text/javascript" src="static/routes.js"></script>
+        <script type="text/javascript" src="static/script.js"></script>
+        <script type="text/javascript">$(function(){ App.initialize(); });</script>
+    </body>
+</html>
+

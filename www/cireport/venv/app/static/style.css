@@ -1,0 +1,60 @@
+.container {
+    position: relative;
+}
+
+.controls {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.footer {
+    text-align: center;
+}
+div.ui-datepicker{
+ font-size:12px;
+}
+
+/*#logo_{
+    float:left;
+    position: relative;
+}*/
+
+#container2{
+    margin-top:55px;
+}
+
+#head_title
+{
+    font-size:12pt;
+}
+p {
+ font-size: 8pt; font-family:Helvetica, Arial,  sans-serif;
+ /*float:left;*/
+ /*position:relative;*/
+}
+/*
+h1  {
+    float:left;
+    position:relative;
+    font-size: 8pt; font-family:Helvetica, Arial,  sans-serif}*/
+.button-one{
+    float: left; margin-right:10px;
+    clear: both;
+}
+.button-two{
+    float:left;
+}
+
+#stats_head{
+    font-size: 1.9em;
+    line-height: 1.5;
+    font-weight: normal;
+    color: #7E26EE;
+    margin: 0 auto;
+    position: relative;
+    float:left;
+    margin-top:40px;
+    text-align: center;
+    font-family:Helvetica, Arial,  sans-serif;
+}
